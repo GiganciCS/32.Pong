@@ -11,6 +11,11 @@ namespace PingPongGame.Managers
         private static Paddle aiPaddle;
         private static Ball ball;
 
+        public static Ball Ball => ball;
+
+        private static int playerScore = 0;
+        private static int aiScore = 0;
+
 
         public static void Initialize()
         {
@@ -31,11 +36,22 @@ namespace PingPongGame.Managers
 
             if (ball.CollidesWith(playerPaddle) || ball.CollidesWith(aiPaddle))
             {
-                ball.Velocity = new Vector2D(ball.Velocity.X, -ball.Velocity.Y);
+                ball.Velocity = new Vector2D(-ball.Velocity.X, ball.Velocity.Y);
             }
 
-            if (ball.Position.X < 0 || ball.Position.X > Constants.WINDOW_WIDTH)
+            // if (ball.Position.X < 0 || ball.Position.X > Constants.WINDOW_WIDTH)
+            // {
+            //     ball.Reset();
+            // }
+
+            if (ball.Position.X + Constants.BALL_SIZE < 0)
             {
+                aiScore++;
+                ball.Reset();
+            }
+            else if (ball.Position.X > Constants.WINDOW_WIDTH)
+            {
+                playerScore++;
                 ball.Reset();
             }
         }
@@ -45,7 +61,11 @@ namespace PingPongGame.Managers
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.Black);
 
-            playerPaddle.draw();
+            Raylib.DrawText($"Player: {playerScore}", 20, 20, 30, Color.Blue);
+            Raylib.DrawText($"AI: {aiScore}", Constants.WINDOW_WIDTH - 150, 20, 30, Color.Red);
+
+
+            playerPaddle.Draw();
             aiPaddle.Draw();
             ball.Draw();
 

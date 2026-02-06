@@ -9,7 +9,7 @@ namespace PingPongGame.Managers
         {
             if (Raylib.IsKeyDown(KeyboardKey.W))
             {
-                playerPaddle.Move();
+                playerPaddle.MoveUp();
             }
             if (Raylib.IsKeyDown(KeyboardKey.S))
             {

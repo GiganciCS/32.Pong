@@ -17,6 +17,8 @@ namespace PingPongGame.GameObjects
         public void MoveUp()
         {
             position.Y -= Constants.PADDLE_SPEED;
+
+            if(position.Y < 0) position.Y = 0;
         }
 
         public void MoveDown()

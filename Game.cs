@@ -9,7 +9,7 @@ namespace PingPongGame
         {
             GameManager.Initialize();
 
-            while (Raylib.WindowShouldClose())
+            while (!Raylib.WindowShouldClose())
             {
                 GameManager.Update();
 
