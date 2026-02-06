@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "EMlIy1leq8k=",
+  "success": true,
+  "projectFilePath": "D:\\Dev\\CodingGiants\\umowa_2024_10\\sem_02_lek_14\\pong_broken\\pong_broken.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tmmmi\\.nuget\\packages\\raylib-cs\\6.1.1\\raylib-cs.6.1.1.nupkg.sha512",
+    "C:\\Users\\tmmmi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

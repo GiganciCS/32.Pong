@@ -1,0 +1,5 @@
+d:\Dev\CodingGiants\umowa_2024_10\sem_02_lek_14\pong_broken\obj\Debug\net8.0\pong_broken.csproj.AssemblyReference.cache
+d:\Dev\CodingGiants\umowa_2024_10\sem_02_lek_14\pong_broken\obj\Debug\net8.0\pong_broken.GeneratedMSBuildEditorConfig.editorconfig
+d:\Dev\CodingGiants\umowa_2024_10\sem_02_lek_14\pong_broken\obj\Debug\net8.0\pong_broken.AssemblyInfoInputs.cache
+d:\Dev\CodingGiants\umowa_2024_10\sem_02_lek_14\pong_broken\obj\Debug\net8.0\pong_broken.AssemblyInfo.cs
+d:\Dev\CodingGiants\umowa_2024_10\sem_02_lek_14\pong_broken\obj\Debug\net8.0\pong_broken.csproj.CoreCompileInputs.cache
