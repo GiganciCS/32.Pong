@@ -34,6 +34,21 @@ namespace PingPongGame.Managers
             ball.Update();
             aiPaddle.Update();
 
+            // Restart gry po naciśnięciu "R" po końcu
+
+            if (playerScore >= 10 || aiScore >= 10)
+            {
+                // Restart gry po naciśnięciu R
+                if (Raylib.IsKeyPressed(KeyboardKey.R))
+                {
+                    playerScore = 0;
+                    aiScore = 0;
+                    ball.Reset();
+                }
+
+                return;
+            }
+
             if (ball.CollidesWith(playerPaddle) || ball.CollidesWith(aiPaddle))
             {
                 ball.Velocity = new Vector2D(-ball.Velocity.X, ball.Velocity.Y);
@@ -63,6 +78,20 @@ namespace PingPongGame.Managers
 
             Raylib.DrawText($"Player: {playerScore}", 20, 20, 30, Color.Blue);
             Raylib.DrawText($"AI: {aiScore}", Constants.WINDOW_WIDTH - 150, 20, 30, Color.Red);
+
+            // Koniec gry jeśli któryś zdobędzie 10 pkt
+
+            if (playerScore >= 10 || aiScore >= 10)
+            {
+                Raylib.BeginDrawing();
+                Raylib.ClearBackground(Color.Black);
+
+                string winnerText = playerScore >= 10 ? "Gracz wygral!" : "AI wygralo!";
+                Raylib.DrawText(winnerText, Constants.WINDOW_WIDTH / 2 - 150, Constants.WINDOW_HEIGHT / 2 - 30, 40, Color.White);
+                Raylib.DrawText("Nacisnij [R], aby zagrac ponownie", Constants.WINDOW_WIDTH / 2 - 200, Constants.WINDOW_HEIGHT / 2 + 30, 20, Color.Gray);
+                Raylib.EndDrawing();
+                return;
+            }
 
 
             playerPaddle.Draw();

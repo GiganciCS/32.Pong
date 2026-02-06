@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive - Politechnika Wroclawska\\PRACA-GIGANCI\\MOJE KURSY ROCZNE\\C#_01W\\32.Pong\\zaj\\broken\\pong_broken.csproj": {}
+    "d:\\OneDrive - Politechnika Wroclawska\\PRACA-GIGANCI\\MOJE KURSY ROCZNE\\C#_01W\\32.Pong\\zaj\\broken\\pong_broken.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive - Politechnika Wroclawska\\PRACA-GIGANCI\\MOJE KURSY ROCZNE\\C#_01W\\32.Pong\\zaj\\broken\\pong_broken.csproj": {
+    "d:\\OneDrive - Politechnika Wroclawska\\PRACA-GIGANCI\\MOJE KURSY ROCZNE\\C#_01W\\32.Pong\\zaj\\broken\\pong_broken.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Politechnika Wroclawska\\PRACA-GIGANCI\\MOJE KURSY ROCZNE\\C#_01W\\32.Pong\\zaj\\broken\\pong_broken.csproj",
+        "projectUniqueName": "d:\\OneDrive - Politechnika Wroclawska\\PRACA-GIGANCI\\MOJE KURSY ROCZNE\\C#_01W\\32.Pong\\zaj\\broken\\pong_broken.csproj",
         "projectName": "pong_broken",
-        "projectPath": "D:\\OneDrive - Politechnika Wroclawska\\PRACA-GIGANCI\\MOJE KURSY ROCZNE\\C#_01W\\32.Pong\\zaj\\broken\\pong_broken.csproj",
+        "projectPath": "d:\\OneDrive - Politechnika Wroclawska\\PRACA-GIGANCI\\MOJE KURSY ROCZNE\\C#_01W\\32.Pong\\zaj\\broken\\pong_broken.csproj",
         "packagesPath": "C:\\Users\\Michcia\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Politechnika Wroclawska\\PRACA-GIGANCI\\MOJE KURSY ROCZNE\\C#_01W\\32.Pong\\zaj\\broken\\obj\\",
+        "outputPath": "d:\\OneDrive - Politechnika Wroclawska\\PRACA-GIGANCI\\MOJE KURSY ROCZNE\\C#_01W\\32.Pong\\zaj\\broken\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
